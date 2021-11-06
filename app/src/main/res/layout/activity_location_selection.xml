@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationSelectionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/location"
+        />
+
+    <TextView
+        android:id="@+id/select_locations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="52dp"
+        android:textSize="25dp"
+        android:text="Select Locations" />
+
+    <CheckBox
+        android:id="@+id/kapsoya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/select_locations"
+        android:layout_marginHorizontal="24dp"
+        android:text="Kapsoya"/>
+
+    <CheckBox
+        android:id="@+id/eastleigh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/kapsoya"
+        android:layout_marginHorizontal="24dp"
+        android:text="Eastleigh"/>
+
+    <CheckBox
+        android:id="@+id/eldoret_university"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/eastleigh"
+        android:layout_marginHorizontal="24dp"
+        android:text="Eldoret University"/>
+
+    <CheckBox
+        android:id="@+id/kahawa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/eldoret_university"
+        android:layout_marginHorizontal="24dp"
+        android:text="Kahawa"/>
+
+    <CheckBox
+        android:id="@+id/moi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/kahawa"
+        android:layout_marginHorizontal="24dp"
+        android:text="Moi's Bridge"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

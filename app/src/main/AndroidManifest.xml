@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FishJoints">
         <activity
-            android:name=".MainActivity"
+            android:name=".RestaurantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FishSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

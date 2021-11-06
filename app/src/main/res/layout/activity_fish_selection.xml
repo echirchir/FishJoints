@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FishSelectionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fish"
+        />
+
+    <TextView
+        android:id="@+id/select_fish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="52dp"
+        android:textSize="25dp"
+        android:text="Select Fish" />
+
+    <CheckBox
+        android:id="@+id/tilapia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/select_fish"
+        android:layout_marginHorizontal="24dp"
+        android:text="Tilapia"/>
+
+    <CheckBox
+        android:id="@+id/mbuta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tilapia"
+        android:layout_marginHorizontal="24dp"
+        android:text="Mbuta"/>
+
+    <CheckBox
+        android:id="@+id/omena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mbuta"
+        android:layout_marginHorizontal="24dp"
+        android:text="Omena"/>
+
+    <CheckBox
+        android:id="@+id/cat_fish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/omena"
+        android:layout_marginHorizontal="24dp"
+        android:text="Cat Fish"/>
+
+    <CheckBox
+        android:id="@+id/electric_fish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cat_fish"
+        android:layout_marginHorizontal="24dp"
+        android:text="Electric Fish"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Locations"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
